@@ -129,6 +129,7 @@ a.move-top {
 
 .banner-top2 {
     background: url(../images/greeceWindow3.jpg) no-repeat top;
+    width: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -154,6 +155,11 @@ p.logo {
     padding-top: 1em;
 }
 
+@media only screen and (max-width: 500px) {
+    p.logo {
+        font-size: 20px;    
+    }
+}
 .banner-text h3 {
     font-size: 58px;
     font-weight: 600;
@@ -200,6 +206,15 @@ a.logo:hover {
     color: #fff;
 }
 
+.banner-button {
+    margin-top: 3rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-button {
+        margin-top: 1rem !important;
+    }
+}
 /* //banner */
 
 /* header */
@@ -861,13 +876,15 @@ a.blog-title {
 /* //blog */
 
 /* testmonials */
-.josh_testimonial{
-    max-height: 10em;
-    margin-top: auto;
-    margin-bottom: auto;
+@media(min-width: 600px) {
+    .testi_grid.josh_testimonial{
+        margin: 1em 7em
+    }
 }
+
 .testi_grid {
     padding: 2em 3em;
+    margin: 1em 2em;
     background: rgba(16, 16, 16, 0.47);
 }
 
@@ -1120,10 +1137,6 @@ p.sub-test {
 
     h4.about-tit {
         font-size: 36px;
-    }
-
-    .testimonials {
-        background-position: left;
     }
 }
 
