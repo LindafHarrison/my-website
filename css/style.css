@@ -177,6 +177,12 @@ p.logo {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 500px) {
+    .banner-text.text-center p {
+        font-weight: 350;
+    }
+}
+
 .social-icons ul li {
     display: inline-block;
 }
